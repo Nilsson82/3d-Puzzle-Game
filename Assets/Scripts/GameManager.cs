@@ -11,6 +11,11 @@ public class GameManager : MonoBehaviour {
     public static int currentLevel;
     public static int unlockedLevel;
 
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     public static void CompleteLevel()
     {
         if(currentLevel < 2)
