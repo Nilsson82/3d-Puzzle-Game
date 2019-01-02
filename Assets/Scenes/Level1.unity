@@ -1474,6 +1474,8 @@ MonoBehaviour:
   defultColorTimer: {r: 1, g: 1, b: 1, a: 0.7254902}
   startTime: 60
   tokenParent: {fileID: 1490839815}
+  winScreenWidth: 200
+  winScreenHeight: 50
 --- !u!4 &1281144885
 Transform:
   m_ObjectHideFlags: 0

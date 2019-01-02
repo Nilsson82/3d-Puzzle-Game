@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (other.transform.tag == "Token")
         {
-            manager.AddToken();
+            manager.tokenCount += 1;
             Destroy(other.gameObject);
         }
 
