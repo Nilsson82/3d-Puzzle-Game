@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class Player : MonoBehaviour
 {
     public GameManager manager;
     public float moveSpeed;
@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
 
     
     private Vector3 spawn;
+
+    public AudioClip[] audioClip;
 
 
 	// Use this for initialization
@@ -50,19 +52,29 @@ public class PlayerMovement : MonoBehaviour
     {
         if (other.transform.tag == "Enemy")
         {
+            PlaySound(3); // Spiketrap
             Die();
         }
 
         if (other.transform.tag == "Token")
         {
             manager.tokenCount += 1;
+            PlaySound(0);
             Destroy(other.gameObject);
         }
 
         if (other.transform.tag == "Finish")
         {
+            PlaySound(1);
+            Time.timeScale = 0f;
             manager.CompleteLevel();  
         }
+    }
+
+    void PlaySound(int clip)
+    {
+        GetComponent<AudioSource>().clip = audioClip[clip];
+        GetComponent<AudioSource>().Play();
     }
 
     void Die()

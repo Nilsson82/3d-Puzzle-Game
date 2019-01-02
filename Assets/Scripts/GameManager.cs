@@ -31,28 +31,28 @@ public class GameManager : MonoBehaviour {
 
     private bool showWinScreen = false;
 
+    public AudioClip[] audioClip;
+
     private void Update()
     {
         if (!stopTime)
         {
             startTime -= Time.deltaTime;
-            
+            currentTime = string.Format("{0:0.000}", startTime);
 
             if (startTime <= 0)
-            {
-                currentTime = string.Format("{0:0.000}", startTime);
+            {  
                 startTime = 0;
                 currentTime = "You're out of time";
                 SceneManager.LoadScene(0);
+                Time.timeScale = 1f;
             }
-
-
-
         }
     }
 
     private void Start()
     {
+        PlaySound(1);
         if (tokenParent != null)
         {
             totalTokenCount = tokenParent.transform.childCount;
@@ -78,6 +78,7 @@ public class GameManager : MonoBehaviour {
     void LoadNextLevel()
     {
         currentLevel = SceneManager.GetActiveScene().buildIndex;
+        Time.timeScale = 1f;
 
         if (currentLevel < 3)
         {
@@ -105,6 +106,7 @@ public class GameManager : MonoBehaviour {
 
         if (startTime <= 5f)
         {
+            //PlaySound(0);
             skin.GetStyle("Timer").normal.textColor = warningColorTimer;
         }
         else
@@ -118,6 +120,7 @@ public class GameManager : MonoBehaviour {
         if (GUI.Button(new Rect(Screen.width - 160, Screen.height - 50, 150, 40), "Back"))
         {
             SceneManager.LoadScene("main_menu");
+            Time.timeScale = 1f;
         }
 
         if(showWinScreen)
@@ -133,6 +136,7 @@ public class GameManager : MonoBehaviour {
             if (GUI.Button(new Rect(winScreenRect.x + 20, winScreenRect.y + winScreenRect.height - 60, 150, 40), "Quit"))
             {
                 SceneManager.LoadScene("main_menu");
+                Time.timeScale = 1f;
             }
 
             currentScore = (float)tokenCount * startTime;
@@ -140,6 +144,12 @@ public class GameManager : MonoBehaviour {
             GUI.Label(new Rect(winScreenRect.x + 20, winScreenRect.y + 90, 600, 150), "Completed Level: " + currentLevel);
         }
 
+    }
+
+    void PlaySound(int clip)
+    {
+        GetComponent<AudioSource>().clip = audioClip[clip];
+        GetComponent<AudioSource>().Play();
     }
 
 
