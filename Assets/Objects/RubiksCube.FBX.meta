@@ -1,0 +1,554 @@
+fileFormatVersion: 2
+guid: b24d89de0ad6af84e91c06d16b6c2d68
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Blue_Center_Cube00
+    100002: Blue_Center_Cube01
+    100004: Blue_Center_Cube02
+    100006: Blue_Red_Side00
+    100008: Blue_Red_Side01
+    100010: Blue_Red_Side02
+    100012: Blue_Red_Side03
+    100014: Blue_White_Oragne_Corner
+    100016: Blue_White_Oragne_Corner 1
+    100018: Blue_White_Oragne_Corner 2
+    100020: Blue_White_Oragne_Corner 3
+    100022: Blue_White_Oragne_Corner 4
+    100024: Blue_White_Oragne_Corner00
+    100026: Blue_White_Oragne_Corner01
+    100028: Blue_White_Oragne_Corner02
+    100030: Blue_White_Oragne_Corner03
+    100032: Blue_White_Oragne_Corner04
+    100034: Blue_White_Red_Corner00
+    100036: Blue_White_Red_Corner01
+    100038: Blue_White_Red_Corner02
+    100040: Blue_White_Red_Corner03
+    100042: Blue_White_Red_Corner04
+    100044: Blue_Yellow_Oragne_Corner00
+    100046: Blue_Yellow_Oragne_Corner01
+    100048: Blue_Yellow_Oragne_Corner02
+    100050: Blue_Yellow_Oragne_Corner03
+    100052: Blue_Yellow_Oragne_Corner04
+    100054: Blue_Yellow_Red_Corner00
+    100056: Blue_Yellow_Red_Corner01
+    100058: Blue_Yellow_Red_Corner02
+    100060: Blue_Yellow_Red_Corner03
+    100062: Blue_Yellow_Red_Corner04
+    100064: CenterCube
+    100066: Green_Center_Cube00
+    100068: Green_Center_Cube01
+    100070: Green_Center_Cube02
+    100072: Green_Red_Side00
+    100074: Green_Red_Side01
+    100076: Green_Red_Side02
+    100078: Green_Red_Side03
+    100080: Green_White_Red_Corner00
+    100082: Green_White_Red_Corner01
+    100084: Green_White_Red_Corner02
+    100086: Green_White_Red_Corner03
+    100088: Green_White_Red_Corner04
+    100090: Green_Yellow_Oragne_Corner
+    100092: Green_Yellow_Oragne_Corner 1
+    100094: Green_Yellow_Oragne_Corner 2
+    100096: Green_Yellow_Oragne_Corner 3
+    100098: Green_Yellow_Oragne_Corner 4
+    100100: Green_Yellow_Red_Corner00
+    100102: Green_Yellow_Red_Corner01
+    100104: Green_Yellow_Red_Corner02
+    100106: Green_Yellow_Red_Corner03
+    100108: Green_Yellow_Red_Corner04
+    100110: Green_Yellow_Side
+    100112: Green_Yellow_Side 1
+    100114: Green_Yellow_Side 2
+    100116: Green_Yellow_Side 3
+    100118: Oragne_Blue_Side00
+    100120: Oragne_Blue_Side01
+    100122: Oragne_Blue_Side02
+    100124: Oragne_Blue_Side03
+    100126: Oragne_Center_Cube00
+    100128: Oragne_Center_Cube01
+    100130: Oragne_Center_Cube02
+    100132: Oragne_Green_Side00
+    100134: Oragne_Green_Side01
+    100136: Oragne_Green_Side02
+    100138: Oragne_Green_Side03
+    100140: Oragne_White_Side00
+    100142: Oragne_White_Side01
+    100144: Oragne_White_Side02
+    100146: Oragne_White_Side03
+    100148: Red_Center_Cube
+    100150: Red_Center_Cube 1
+    100152: Red_Center_Cube 2
+    100154: //RootNode
+    100156: White_Blue_Side00
+    100158: White_Blue_Side01
+    100160: White_Blue_Side02
+    100162: White_Blue_Side03
+    100164: White_Center_Cube00
+    100166: White_Center_Cube01
+    100168: White_Center_Cube02
+    100170: White_Green_Side00
+    100172: White_Green_Side01
+    100174: White_Green_Side02
+    100176: White_Green_Side03
+    100178: White_Red_Side00
+    100180: White_Red_Side01
+    100182: White_Red_Side02
+    100184: White_Red_Side03
+    100186: Yellow_Blue_Side00
+    100188: Yellow_Blue_Side01
+    100190: Yellow_Blue_Side02
+    100192: Yellow_Blue_Side03
+    100194: Yellow_Center_Cube00
+    100196: Yellow_Center_Cube01
+    100198: Yellow_Center_Cube02
+    100200: Yellow_Oragne_Corner
+    100202: Yellow_Oragne_Corner 1
+    100204: Yellow_Oragne_Corner 2
+    100206: Yellow_Oragne_Corner 3
+    100208: Yellow_Red_Side00
+    100210: Yellow_Red_Side01
+    100212: Yellow_Red_Side02
+    100214: Yellow_Red_Side03
+    400000: Blue_Center_Cube00
+    400002: Blue_Center_Cube01
+    400004: Blue_Center_Cube02
+    400006: Blue_Red_Side00
+    400008: Blue_Red_Side01
+    400010: Blue_Red_Side02
+    400012: Blue_Red_Side03
+    400014: Blue_White_Oragne_Corner
+    400016: Blue_White_Oragne_Corner 1
+    400018: Blue_White_Oragne_Corner 2
+    400020: Blue_White_Oragne_Corner 3
+    400022: Blue_White_Oragne_Corner 4
+    400024: Blue_White_Oragne_Corner00
+    400026: Blue_White_Oragne_Corner01
+    400028: Blue_White_Oragne_Corner02
+    400030: Blue_White_Oragne_Corner03
+    400032: Blue_White_Oragne_Corner04
+    400034: Blue_White_Red_Corner00
+    400036: Blue_White_Red_Corner01
+    400038: Blue_White_Red_Corner02
+    400040: Blue_White_Red_Corner03
+    400042: Blue_White_Red_Corner04
+    400044: Blue_Yellow_Oragne_Corner00
+    400046: Blue_Yellow_Oragne_Corner01
+    400048: Blue_Yellow_Oragne_Corner02
+    400050: Blue_Yellow_Oragne_Corner03
+    400052: Blue_Yellow_Oragne_Corner04
+    400054: Blue_Yellow_Red_Corner00
+    400056: Blue_Yellow_Red_Corner01
+    400058: Blue_Yellow_Red_Corner02
+    400060: Blue_Yellow_Red_Corner03
+    400062: Blue_Yellow_Red_Corner04
+    400064: CenterCube
+    400066: Green_Center_Cube00
+    400068: Green_Center_Cube01
+    400070: Green_Center_Cube02
+    400072: Green_Red_Side00
+    400074: Green_Red_Side01
+    400076: Green_Red_Side02
+    400078: Green_Red_Side03
+    400080: Green_White_Red_Corner00
+    400082: Green_White_Red_Corner01
+    400084: Green_White_Red_Corner02
+    400086: Green_White_Red_Corner03
+    400088: Green_White_Red_Corner04
+    400090: Green_Yellow_Oragne_Corner
+    400092: Green_Yellow_Oragne_Corner 1
+    400094: Green_Yellow_Oragne_Corner 2
+    400096: Green_Yellow_Oragne_Corner 3
+    400098: Green_Yellow_Oragne_Corner 4
+    400100: Green_Yellow_Red_Corner00
+    400102: Green_Yellow_Red_Corner01
+    400104: Green_Yellow_Red_Corner02
+    400106: Green_Yellow_Red_Corner03
+    400108: Green_Yellow_Red_Corner04
+    400110: Green_Yellow_Side
+    400112: Green_Yellow_Side 1
+    400114: Green_Yellow_Side 2
+    400116: Green_Yellow_Side 3
+    400118: Oragne_Blue_Side00
+    400120: Oragne_Blue_Side01
+    400122: Oragne_Blue_Side02
+    400124: Oragne_Blue_Side03
+    400126: Oragne_Center_Cube00
+    400128: Oragne_Center_Cube01
+    400130: Oragne_Center_Cube02
+    400132: Oragne_Green_Side00
+    400134: Oragne_Green_Side01
+    400136: Oragne_Green_Side02
+    400138: Oragne_Green_Side03
+    400140: Oragne_White_Side00
+    400142: Oragne_White_Side01
+    400144: Oragne_White_Side02
+    400146: Oragne_White_Side03
+    400148: Red_Center_Cube
+    400150: Red_Center_Cube 1
+    400152: Red_Center_Cube 2
+    400154: //RootNode
+    400156: White_Blue_Side00
+    400158: White_Blue_Side01
+    400160: White_Blue_Side02
+    400162: White_Blue_Side03
+    400164: White_Center_Cube00
+    400166: White_Center_Cube01
+    400168: White_Center_Cube02
+    400170: White_Green_Side00
+    400172: White_Green_Side01
+    400174: White_Green_Side02
+    400176: White_Green_Side03
+    400178: White_Red_Side00
+    400180: White_Red_Side01
+    400182: White_Red_Side02
+    400184: White_Red_Side03
+    400186: Yellow_Blue_Side00
+    400188: Yellow_Blue_Side01
+    400190: Yellow_Blue_Side02
+    400192: Yellow_Blue_Side03
+    400194: Yellow_Center_Cube00
+    400196: Yellow_Center_Cube01
+    400198: Yellow_Center_Cube02
+    400200: Yellow_Oragne_Corner
+    400202: Yellow_Oragne_Corner 1
+    400204: Yellow_Oragne_Corner 2
+    400206: Yellow_Oragne_Corner 3
+    400208: Yellow_Red_Side00
+    400210: Yellow_Red_Side01
+    400212: Yellow_Red_Side02
+    400214: Yellow_Red_Side03
+    2100000: No Name
+    2100002: Wall Paint
+    2100004: 19 - Glass (Thin wall)
+    2100006: 20 - Polished Aluminum
+    2100008: 13 - Brushed Metal
+    2100010: 03 - Default
+    2100012: 14 - Polished Aluminum
+    2100014: 01 - Default
+    2300000: Blue_Center_Cube00
+    2300002: Blue_Center_Cube01
+    2300004: Blue_Red_Side00
+    2300006: Blue_Red_Side01
+    2300008: Blue_Red_Side02
+    2300010: Blue_White_Oragne_Corner 1
+    2300012: Blue_White_Oragne_Corner 2
+    2300014: Blue_White_Oragne_Corner 3
+    2300016: Blue_White_Oragne_Corner 4
+    2300018: Blue_White_Oragne_Corner00
+    2300020: Blue_White_Oragne_Corner01
+    2300022: Blue_White_Oragne_Corner02
+    2300024: Blue_White_Oragne_Corner03
+    2300026: Blue_White_Red_Corner00
+    2300028: Blue_White_Red_Corner01
+    2300030: Blue_White_Red_Corner02
+    2300032: Blue_White_Red_Corner03
+    2300034: Blue_Yellow_Oragne_Corner00
+    2300036: Blue_Yellow_Oragne_Corner01
+    2300038: Blue_Yellow_Oragne_Corner02
+    2300040: Blue_Yellow_Oragne_Corner03
+    2300042: Blue_Yellow_Red_Corner00
+    2300044: Blue_Yellow_Red_Corner01
+    2300046: Blue_Yellow_Red_Corner02
+    2300048: Blue_Yellow_Red_Corner03
+    2300050: CenterCube
+    2300052: Green_Center_Cube00
+    2300054: Green_Center_Cube01
+    2300056: Green_Red_Side00
+    2300058: Green_Red_Side01
+    2300060: Green_Red_Side02
+    2300062: Green_White_Red_Corner00
+    2300064: Green_White_Red_Corner01
+    2300066: Green_White_Red_Corner02
+    2300068: Green_White_Red_Corner03
+    2300070: Green_Yellow_Oragne_Corner 1
+    2300072: Green_Yellow_Oragne_Corner 2
+    2300074: Green_Yellow_Oragne_Corner 3
+    2300076: Green_Yellow_Oragne_Corner 4
+    2300078: Green_Yellow_Red_Corner00
+    2300080: Green_Yellow_Red_Corner01
+    2300082: Green_Yellow_Red_Corner02
+    2300084: Green_Yellow_Red_Corner03
+    2300086: Green_Yellow_Side 1
+    2300088: Green_Yellow_Side 2
+    2300090: Green_Yellow_Side 3
+    2300092: Oragne_Blue_Side00
+    2300094: Oragne_Blue_Side01
+    2300096: Oragne_Blue_Side02
+    2300098: Oragne_Center_Cube00
+    2300100: Oragne_Center_Cube02
+    2300102: Oragne_Green_Side00
+    2300104: Oragne_Green_Side01
+    2300106: Oragne_Green_Side02
+    2300108: Oragne_White_Side00
+    2300110: Oragne_White_Side01
+    2300112: Oragne_White_Side02
+    2300114: Red_Center_Cube 1
+    2300116: Red_Center_Cube 2
+    2300118: White_Blue_Side00
+    2300120: White_Blue_Side01
+    2300122: White_Blue_Side02
+    2300124: White_Center_Cube00
+    2300126: White_Center_Cube01
+    2300128: White_Green_Side00
+    2300130: White_Green_Side01
+    2300132: White_Green_Side02
+    2300134: White_Red_Side00
+    2300136: White_Red_Side01
+    2300138: White_Red_Side02
+    2300140: Yellow_Blue_Side00
+    2300142: Yellow_Blue_Side01
+    2300144: Yellow_Blue_Side02
+    2300146: Yellow_Center_Cube00
+    2300148: Yellow_Center_Cube01
+    2300150: Yellow_Oragne_Corner 1
+    2300152: Yellow_Oragne_Corner 2
+    2300154: Yellow_Oragne_Corner 3
+    2300156: Yellow_Red_Side00
+    2300158: Yellow_Red_Side01
+    2300160: Yellow_Red_Side02
+    3300000: Blue_Center_Cube00
+    3300002: Blue_Center_Cube01
+    3300004: Blue_Red_Side00
+    3300006: Blue_Red_Side01
+    3300008: Blue_Red_Side02
+    3300010: Blue_White_Oragne_Corner 1
+    3300012: Blue_White_Oragne_Corner 2
+    3300014: Blue_White_Oragne_Corner 3
+    3300016: Blue_White_Oragne_Corner 4
+    3300018: Blue_White_Oragne_Corner00
+    3300020: Blue_White_Oragne_Corner01
+    3300022: Blue_White_Oragne_Corner02
+    3300024: Blue_White_Oragne_Corner03
+    3300026: Blue_White_Red_Corner00
+    3300028: Blue_White_Red_Corner01
+    3300030: Blue_White_Red_Corner02
+    3300032: Blue_White_Red_Corner03
+    3300034: Blue_Yellow_Oragne_Corner00
+    3300036: Blue_Yellow_Oragne_Corner01
+    3300038: Blue_Yellow_Oragne_Corner02
+    3300040: Blue_Yellow_Oragne_Corner03
+    3300042: Blue_Yellow_Red_Corner00
+    3300044: Blue_Yellow_Red_Corner01
+    3300046: Blue_Yellow_Red_Corner02
+    3300048: Blue_Yellow_Red_Corner03
+    3300050: CenterCube
+    3300052: Green_Center_Cube00
+    3300054: Green_Center_Cube01
+    3300056: Green_Red_Side00
+    3300058: Green_Red_Side01
+    3300060: Green_Red_Side02
+    3300062: Green_White_Red_Corner00
+    3300064: Green_White_Red_Corner01
+    3300066: Green_White_Red_Corner02
+    3300068: Green_White_Red_Corner03
+    3300070: Green_Yellow_Oragne_Corner 1
+    3300072: Green_Yellow_Oragne_Corner 2
+    3300074: Green_Yellow_Oragne_Corner 3
+    3300076: Green_Yellow_Oragne_Corner 4
+    3300078: Green_Yellow_Red_Corner00
+    3300080: Green_Yellow_Red_Corner01
+    3300082: Green_Yellow_Red_Corner02
+    3300084: Green_Yellow_Red_Corner03
+    3300086: Green_Yellow_Side 1
+    3300088: Green_Yellow_Side 2
+    3300090: Green_Yellow_Side 3
+    3300092: Oragne_Blue_Side00
+    3300094: Oragne_Blue_Side01
+    3300096: Oragne_Blue_Side02
+    3300098: Oragne_Center_Cube00
+    3300100: Oragne_Center_Cube02
+    3300102: Oragne_Green_Side00
+    3300104: Oragne_Green_Side01
+    3300106: Oragne_Green_Side02
+    3300108: Oragne_White_Side00
+    3300110: Oragne_White_Side01
+    3300112: Oragne_White_Side02
+    3300114: Red_Center_Cube 1
+    3300116: Red_Center_Cube 2
+    3300118: White_Blue_Side00
+    3300120: White_Blue_Side01
+    3300122: White_Blue_Side02
+    3300124: White_Center_Cube00
+    3300126: White_Center_Cube01
+    3300128: White_Green_Side00
+    3300130: White_Green_Side01
+    3300132: White_Green_Side02
+    3300134: White_Red_Side00
+    3300136: White_Red_Side01
+    3300138: White_Red_Side02
+    3300140: Yellow_Blue_Side00
+    3300142: Yellow_Blue_Side01
+    3300144: Yellow_Blue_Side02
+    3300146: Yellow_Center_Cube00
+    3300148: Yellow_Center_Cube01
+    3300150: Yellow_Oragne_Corner 1
+    3300152: Yellow_Oragne_Corner 2
+    3300154: Yellow_Oragne_Corner 3
+    3300156: Yellow_Red_Side00
+    3300158: Yellow_Red_Side01
+    3300160: Yellow_Red_Side02
+    4300000: CenterCube
+    4300002: Green_Yellow_Oragne_Corner
+    4300004: Green_Yellow_Oragne_Corner
+    4300006: Green_Yellow_Oragne_Corner
+    4300008: Green_Yellow_Oragne_Corner
+    4300010: Green_Yellow_Side
+    4300012: Green_Yellow_Side
+    4300014: Green_Yellow_Side
+    4300016: Yellow_Oragne_Corner
+    4300018: Yellow_Oragne_Corner
+    4300020: Yellow_Oragne_Corner
+    4300022: Blue_Yellow_Oragne_Corner00
+    4300024: Blue_Yellow_Oragne_Corner01
+    4300026: Blue_Yellow_Oragne_Corner02
+    4300028: Blue_Yellow_Oragne_Corner03
+    4300030: Blue_White_Oragne_Corner
+    4300032: Blue_White_Oragne_Corner
+    4300034: Blue_White_Oragne_Corner
+    4300036: Blue_White_Oragne_Corner
+    4300038: Blue_White_Oragne_Corner00
+    4300040: Blue_White_Oragne_Corner01
+    4300042: Blue_White_Oragne_Corner02
+    4300044: Blue_White_Oragne_Corner03
+    4300046: Green_Yellow_Red_Corner00
+    4300048: Green_Yellow_Red_Corner01
+    4300050: Green_Yellow_Red_Corner02
+    4300052: Green_Yellow_Red_Corner03
+    4300054: Blue_Yellow_Red_Corner00
+    4300056: Blue_Yellow_Red_Corner01
+    4300058: Blue_Yellow_Red_Corner02
+    4300060: Blue_Yellow_Red_Corner03
+    4300062: Blue_White_Red_Corner00
+    4300064: Blue_White_Red_Corner01
+    4300066: Blue_White_Red_Corner02
+    4300068: Blue_White_Red_Corner03
+    4300070: Green_White_Red_Corner00
+    4300072: Green_White_Red_Corner01
+    4300074: Green_White_Red_Corner02
+    4300076: Green_White_Red_Corner03
+    4300078: Green_Red_Side00
+    4300080: Green_Red_Side01
+    4300082: Green_Red_Side02
+    4300084: Yellow_Red_Side00
+    4300086: Yellow_Red_Side01
+    4300088: Yellow_Red_Side02
+    4300090: Blue_Red_Side00
+    4300092: Blue_Red_Side01
+    4300094: Blue_Red_Side02
+    4300096: White_Red_Side00
+    4300098: White_Red_Side01
+    4300100: White_Red_Side02
+    4300102: White_Green_Side00
+    4300104: White_Green_Side01
+    4300106: White_Green_Side02
+    4300108: Yellow_Blue_Side00
+    4300110: Yellow_Blue_Side01
+    4300112: Yellow_Blue_Side02
+    4300114: White_Blue_Side00
+    4300116: White_Blue_Side01
+    4300118: White_Blue_Side02
+    4300120: Oragne_Blue_Side00
+    4300122: Oragne_Blue_Side01
+    4300124: Oragne_Blue_Side02
+    4300126: Oragne_White_Side00
+    4300128: Oragne_White_Side01
+    4300130: Oragne_White_Side02
+    4300132: Oragne_Green_Side00
+    4300134: Oragne_Green_Side01
+    4300136: Oragne_Green_Side02
+    4300138: Oragne_Center_Cube00
+    4300140: Oragne_Center_Cube02
+    4300142: Green_Center_Cube00
+    4300144: Green_Center_Cube01
+    4300146: White_Center_Cube00
+    4300148: White_Center_Cube01
+    4300150: Blue_Center_Cube00
+    4300152: Blue_Center_Cube01
+    4300154: Yellow_Center_Cube00
+    4300156: Yellow_Center_Cube01
+    4300158: Red_Center_Cube
+    4300160: Red_Center_Cube
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
