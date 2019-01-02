@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public GameManager manager;
     public float moveSpeed;
     public GameObject deathParticles;
 
@@ -17,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
+        manager = manager.GetComponent<GameManager>();
         spawn = transform.position;		
 	}
 	
@@ -51,9 +53,15 @@ public class PlayerMovement : MonoBehaviour
             Die();
         }
 
+        if (other.transform.tag == "Token")
+        {
+            manager.AddToken();
+            Destroy(other.gameObject);
+        }
+
         if (other.transform.tag == "Finish")
         {
-            GameManager.CompleteLevel();  
+            manager.CompleteLevel();  
         }
     }
 

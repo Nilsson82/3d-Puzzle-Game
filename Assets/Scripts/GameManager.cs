@@ -5,23 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-    public  int currentScore;
-    public static int highscore;
 
-    public static int currentLevel;
-    public static int unlockedLevel;
+    // Count
+    public int currentScore;
+    public int highscore;
+    public int tokenCount;
+    public int currentLevel;
+    public int unlockedLevel;
+    private int totalTokenCount;
 
+    // GUI Skin
+    public GUISkin skin;
+
+    // Timer variables
     public Rect timerRect;
     public Color warningColorTimer;
     public Color defultColorTimer;
-
-
-    public GUISkin skin;
-
-    private static bool stopTime;
+    private bool stopTime;
     public float startTime;
-    private static string currentTime;
+    private string currentTime;
 
+    // References
+    public GameObject tokenParent;
 
     private void Update()
     {
@@ -41,17 +46,31 @@ public class GameManager : MonoBehaviour {
 
     private void Start()
     {
+        if (tokenParent != null)
+        {
+            totalTokenCount = tokenParent.transform.childCount;
+        }
+        if (PlayerPrefs.GetInt("Level Completed") > 0)
+        {
+            currentLevel = PlayerPrefs.GetInt("Level Completed");
+        }
+        else
+        {
+            currentLevel = 1;
+        }
         stopTime = false;
-        DontDestroyOnLoad(gameObject);
     }
 
-    public static void CompleteLevel()
+    public void CompleteLevel()
     {
         currentLevel = SceneManager.GetActiveScene().buildIndex;
 
         if (currentLevel < 3)
         {
             currentLevel += 1;
+            PlayerPrefs.SetInt("Level Completed", currentLevel);
+            PlayerPrefs.SetInt("Level " + currentLevel.ToString() + " score", currentScore);
+
             SceneManager.LoadScene(currentLevel);
         }
         else
@@ -60,6 +79,12 @@ public class GameManager : MonoBehaviour {
             currentTime = "You win!!!";
             SceneManager.LoadScene(0);
         }
+
+    }
+
+    public void AddToken()
+    {
+        tokenCount += 1;
 
     }
 
@@ -77,6 +102,12 @@ public class GameManager : MonoBehaviour {
         }
 
         GUI.Label(timerRect, currentTime, skin.GetStyle("Timer"));
+        GUI.Label(new Rect(45, 100, 200, 200), tokenCount.ToString() + "/" + totalTokenCount.ToString());
+
+        if (GUI.Button(new Rect(10, 100, 100, 45), "Back"))
+        {
+            SceneManager.LoadScene(0);
+        }
 
     }
 
