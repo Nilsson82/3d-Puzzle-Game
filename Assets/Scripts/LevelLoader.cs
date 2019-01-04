@@ -31,7 +31,8 @@ public class LevelLoader : MonoBehaviour {
 
     private void Update()
     {
-        if (canLoadLevel && CrossPlatformInputManager.GetButtonDown("Action") && inRange)
+        //if (canLoadLevel && CrossPlatformInputManager.GetButtonDown("Action") && inRange)
+        if (canLoadLevel && Input.GetButtonDown("Action") && inRange)
         {
             SceneManager.LoadScene("Level" + levelToLoad.ToString());
         }

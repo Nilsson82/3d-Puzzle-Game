@@ -32,7 +32,8 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        input = new Vector3(CrossPlatformInputManager.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        //input = new Vector3(CrossPlatformInputManager.GetAxisRaw("Horizontal"), 0, CrossPlatformInputManager.GetAxisRaw("Vertical"));
+        input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 
         if (GetComponent<Rigidbody>().velocity.magnitude < maxSpeed)
         {
