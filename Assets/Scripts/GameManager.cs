@@ -118,9 +118,9 @@ public class GameManager : MonoBehaviour {
         GUI.Label(timerRect, currentTime, skin.GetStyle("Timer"));
         GUI.Label(new Rect(45, 100, 200, 200), tokenCount.ToString() + "/" + totalTokenCount.ToString());
 
-        if (GUI.Button(new Rect(Screen.width - 160, Screen.height - 50, 150, 40), "Back"))
+        if (GUI.Button(new Rect(Screen.width - 160, 50, 150, 40), "Back"))
         {
-            SceneManager.LoadScene("main_menu");
+            SceneManager.LoadScene("Menu");
             Time.timeScale = 1f;
         }
 
@@ -136,7 +136,7 @@ public class GameManager : MonoBehaviour {
 
             if (GUI.Button(new Rect(winScreenRect.x + 20, winScreenRect.y + winScreenRect.height - 60, 150, 40), "Quit"))
             {
-                SceneManager.LoadScene("main_menu");
+                SceneManager.LoadScene("Menu");
                 Time.timeScale = 1f;
             }
 
