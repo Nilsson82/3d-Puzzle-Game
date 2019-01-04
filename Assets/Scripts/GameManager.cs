@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour {
 
     private void Start()
     {
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
         PlaySound(1);
         if (tokenParent != null)
         {

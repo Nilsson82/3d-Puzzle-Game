@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour
 {
     public GameManager manager;
     public float moveSpeed;
     public GameObject deathParticles;
+    public bool usesManager = true;
 
     private float maxSpeed = 5f;
     private Vector3 input;
@@ -20,14 +22,18 @@ public class Player : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
-        manager = manager.GetComponent<GameManager>();
+        if (usesManager)
+        {
+            manager = manager.GetComponent<GameManager>();
+        }
         spawn = transform.position;		
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate ()
     {
-        input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+        input = new Vector3(CrossPlatformInputManager.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+
         if (GetComponent<Rigidbody>().velocity.magnitude < maxSpeed)
         {
             GetComponent<Rigidbody>().AddRelativeForce(input * moveSpeed);
@@ -58,7 +64,10 @@ public class Player : MonoBehaviour
 
         if (other.transform.tag == "Token")
         {
-            manager.tokenCount += 1;
+            if (usesManager)
+            {
+                manager.tokenCount += 1;
+            }
             PlaySound(0);
             Destroy(other.gameObject);
         }
@@ -67,7 +76,10 @@ public class Player : MonoBehaviour
         {
             PlaySound(1);
             Time.timeScale = 0f;
-            manager.CompleteLevel();  
+            if (usesManager)
+            {
+                manager.CompleteLevel();
+            }
         }
     }
 
