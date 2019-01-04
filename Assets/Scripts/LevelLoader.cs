@@ -12,6 +12,9 @@ public class LevelLoader : MonoBehaviour {
     private bool inRange;
     private bool canLoadLevel;
 
+    // GUI Skin
+    public GUISkin skin;
+
 
     private void Start()
     {
@@ -32,7 +35,6 @@ public class LevelLoader : MonoBehaviour {
     private void Update()
     {
         if (canLoadLevel && CrossPlatformInputManager.GetButtonDown("Action") && inRange)
-        //if (canLoadLevel && Input.GetButtonDown("Action") && inRange)
         {
             SceneManager.LoadScene("Level" + levelToLoad.ToString());
         }
@@ -44,7 +46,7 @@ public class LevelLoader : MonoBehaviour {
         if (canLoadLevel)
         {
 #if UNITY_ANDROID
-            loadPrompt = "[Action] to load level " + levelToLoad.ToString();
+            loadPrompt = "Press [Action] to start level " + levelToLoad.ToString();
 #else
             loadPrompt = "[E] to load level " + levelToLoad.ToString();
 #endif
@@ -63,7 +65,8 @@ public class LevelLoader : MonoBehaviour {
 
     private void OnGUI()
     {
-        GUI.Label(new Rect(30, Screen.height * .9f, 200, 40), loadPrompt);
+        GUI.skin = skin;
+        GUI.Label(new Rect(30, Screen.height * .8f, 500, 300), loadPrompt);
     }
 
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class GameManager : MonoBehaviour {
 
@@ -47,6 +48,12 @@ public class GameManager : MonoBehaviour {
                 SceneManager.LoadScene(0);
                 Time.timeScale = 1f;
             }
+        }
+
+        if (CrossPlatformInputManager.GetButtonDown("Back"))
+        {
+            SceneManager.LoadScene("Menu");
+            Time.timeScale = 1f;
         }
     }
 
@@ -118,11 +125,16 @@ public class GameManager : MonoBehaviour {
         GUI.Label(timerRect, currentTime, skin.GetStyle("Timer"));
         GUI.Label(new Rect(45, 100, 200, 200), tokenCount.ToString() + "/" + totalTokenCount.ToString());
 
-        if (GUI.Button(new Rect(Screen.width - 160, 50, 150, 40), "Back"))
+
+#if UNITY_ANDROID
+          // Hanlde in MobileTiltControlRig 
+#else
+        if (GUI.Button(new Rect(Screen.width - 330, 50, 300, 60), "Back"))
         {
             SceneManager.LoadScene("Menu");
             Time.timeScale = 1f;
         }
+#endif
 
         if(showWinScreen)
         {

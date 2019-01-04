@@ -33,8 +33,6 @@ public class Player : MonoBehaviour
 	void FixedUpdate ()
     {
         input = new Vector3(CrossPlatformInputManager.GetAxisRaw("Horizontal"), 0, CrossPlatformInputManager.GetAxisRaw("Vertical"));
-        //input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-
         if (GetComponent<Rigidbody>().velocity.magnitude < maxSpeed)
         {
             GetComponent<Rigidbody>().AddRelativeForce(input * moveSpeed);
@@ -46,7 +44,7 @@ public class Player : MonoBehaviour
         }
 
         //Physics.gravity = Physics.Raycast(transform.position, Vector3.down, .6f) ? Vector3.zero : new Vector3(0, -9.5f, 0);
-        
+
     }
 
     private void OnCollisionEnter(Collision other)
@@ -89,6 +87,7 @@ public class Player : MonoBehaviour
     void PlaySound(int clip)
     {
         GetComponent<AudioSource>().clip = audioClip[clip];
+        GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("MusicVolume");
         GetComponent<AudioSource>().Play();
     }
 

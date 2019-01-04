@@ -34,6 +34,7 @@ public class Main_Menu : MonoBehaviour {
 void PlaySound(int clip)
     {
         GetComponent<AudioSource>().clip = audioClip[clip];
+        GetComponent<AudioSource>().volume = PlayerPrefs.GetFloat("MusicVolume");
         GetComponent<AudioSource>().Play();
     }
 }

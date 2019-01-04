@@ -91,7 +91,10 @@ public class SettingManager : MonoBehaviour {
     public void LoadSettings()
     {
         gameSettings = JsonUtility.FromJson<GameSettings>(File.ReadAllText(Application.persistentDataPath + "/gamesettings.json"));
-        musicVolumeSlider.value = gameSettings.musicVolume;
+
+        musicSource.volume = musicVolumeSlider.value = gameSettings.musicVolume;
+        PlayerPrefs.SetFloat("MusicVolume", gameSettings.musicVolume);
+
         //effectVolumeSlider.value = gameSettings.effectVolume;
 
         antialiasingDropdown.value = gameSettings.antiAliasing;
@@ -109,6 +112,7 @@ public class SettingManager : MonoBehaviour {
     public void OnMusicVolumeChange()
     {
         musicSource.volume = gameSettings.musicVolume = musicVolumeSlider.value;
+        PlayerPrefs.SetFloat("MusicVolume", musicVolumeSlider.value);
     }
 
 
