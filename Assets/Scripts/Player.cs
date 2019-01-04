@@ -43,6 +43,8 @@ public class Player : MonoBehaviour
         {
             Die();
         }
+
+        //Physics.gravity = Physics.Raycast(transform.position, Vector3.down, .6f) ? Vector3.zero : new Vector3(0, -9.5f, 0);
         
     }
 
